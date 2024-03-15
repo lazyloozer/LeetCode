@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html "https://www.thymeleaf.org">
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>Login</title>
+    <link rel=stylesheet type=text/css href="registration.css">
+  </head>
+  <body>
+    <h2>Login Here To Shop</h2>
+    <form action="login" method="post">
+    
+      
+      <label>Email:</label><br /><br />
+      <input type="email" name="email" class="form" required /><br /><br />
+      
+      <label>Password:</label><br /><br />
+      <input
+        type="password"
+        name="password"
+        class="form"
+        required
+      /><br /><br />
+     
+      
+      <input type="submit" value="SUBMIT" />
+      
+      
+      <br /><br />
+      <a href="/forgotpassword">Forgot Password</a>
+      <div>
+      <alert th:text="${session.msg}"></alert>
+      
+      </div>
+    </form>
+  </body>
+</html>
