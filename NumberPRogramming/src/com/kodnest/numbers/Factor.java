@@ -17,5 +17,6 @@ class factorApp{
 		Scanner sc=new Scanner(System.in);
 		int num=sc.nextInt();
 		Factor.printfactor(num);
+		sc.close();
 	}
 }

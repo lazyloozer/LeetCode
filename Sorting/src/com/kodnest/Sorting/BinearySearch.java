@@ -43,7 +43,7 @@ public class BinearySearch {
 		}else {
 			System.out.println("Element was not found ");
 		}
-				
+			sc.close();	
 			}
 	}
 

@@ -6,21 +6,19 @@ public class DemoLongestString {
 
 	public static void main(String[] args) {
 		// longest String
-		
-		
-//		String s="Java IS PRogramming";
-//		String s1=s.trim();
-//		String[] split=s1.split(" ");
-//		
-//		String emp="";
-//		int index=0;
-//		for(int i=0;i<split.length;i++) {
-//			if(split[i].length()>index) {
-//				emp=split[i];
-//				index=split[i].length();
-//			}
-//		}
-//		System.out.println(emp);
+	
+		String s="Java IS PRogramming";
+		String s1=s.trim();
+		String[] split=s1.split(" ");		
+		String emp="";
+		int index=0;
+		for(int i=0;i<split.length;i++) {
+			if(split[i].length()<index) {
+				emp=split[i];
+				index=split[i].length();
+			}
+		}
+		System.out.println(emp);
 		
 		
 		//--------------------------------------------------------------
@@ -50,15 +48,15 @@ public class DemoLongestString {
 		//frequency
 		
 		
-		String s="Program";
-		char ch='r';
-		int count=0;
-		for(int i=0;i<s.length();i++) {
-			if(ch==s.charAt(i)) {
-				count++;
-			}
-		}
-		System.out.println("Frequency :" + count);
+//		String s="Program";
+//		char ch='r';
+//		int count=0;
+//		for(int i=0;i<s.length();i++) {
+//			if(ch==s.charAt(i)) {
+//				count++;
+//			}
+//		}
+//		System.out.println("Frequency :" + count);
 	}
 
 }

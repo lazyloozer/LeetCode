@@ -16,7 +16,7 @@ public class StrongNumber {
 		int temp=num;
 		int sum=0;
 		while(temp!=0) {
-			digit=num%10;
+			digit=temp%10;
 			sum=sum+strong(digit);
 			temp=temp/10;
 		}
@@ -38,7 +38,7 @@ class StrongApp{
 		if(detectstrong==true) {
 			System.out.println("The "+n+"is Strong");
 		}else {
-			System.out.println("The "+n+"is Strong");
+			System.out.println("The "+n+"is not XStrong");
 		}
 		
 		
